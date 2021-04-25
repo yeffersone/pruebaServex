@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: #001cbe;
+    background: #387794;
     font-family: system-ui;
     overflow-x: hidden;
     /*background-image: url('../images/asset-red.svg');*/
@@ -34,8 +34,12 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .social a {
-    text-decoration: none;
+  .character-image-container-dead {
+    grid-area: avatar;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .arrow {
     grid-area: arrow;
@@ -93,11 +97,6 @@ body {
     text-transform: uppercase;
   }
   
-  .social {
-    grid-area: social;
-    /* border: 1px solid red; */
-  }
-  
   .character-name-container {
     /* border: 1px solid blue; */
     display: flex;
@@ -107,6 +106,9 @@ body {
   }
   
   .character-description-container {
+    grid-area: character-description;
+  }
+  .character-description-container-dead {
     grid-area: character-description;
   }
   
@@ -140,9 +142,6 @@ body {
     margin-inline: 5px;
   }
   
-  .links {
-  }
-  
   .line {
     width: 2px;
     height: 150px;
@@ -161,18 +160,30 @@ body {
     text-align: center;
   }
   .character-image {
+  
+    /* filter: url('img/gray.svg#grayscale'); */
     max-width: 100%;
     /* width: auto; */
-    border-radius: 50%;
+    border-radius: 25%;
+    filter:grayscale(); 
+   
+  }
+  .character-image-dead{
+  
+    /* filter: url('img/gray.svg#grayscale'); */
+    max-width: 100%;
+    /* width: auto; */
+    border-radius: 25%;
+    filter:grayscale();
   }
   
   .character-label {
-    background: #685128;
+    background: #3b9e54;
     padding: 1em;
-    color: white;
+    color: rgb(10, 10, 10);
     border-radius: 10px;
     text-align: left;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
     /* display: inline-flex; */
   }
@@ -252,10 +263,7 @@ body {
       margin-top: 1em;
       justify-content: center;
     }
-    .social {
-      text-align: center;
-      margin-top: 2em;
-    }
+  
     .asset {
       display:none;
     }
@@ -267,14 +275,5 @@ body {
       user-select: none;
       height: 50px;
       background-position: center;
-    }
-    .character-image-container img{
-      /* display: none; */
-    }
-    .social a {
-      margin-left: 2em;
-    }
-    .social a:first-child {
-      margin-left: 0;
     }
   }

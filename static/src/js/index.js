@@ -17,6 +17,8 @@ async function initApp(initCharacterId) {
 
 initApp(currentCaracter)
 
+// console.log(initApp(currentCaracter)
+// )
 
 //console.log(api.getCharacter(1))
 
