@@ -165,7 +165,7 @@ body {
     max-width: 100%;
     /* width: auto; */
     border-radius: 25%;
-    filter:grayscale(); 
+    /* filter:grayscale();  */
    
   }
   .character-image-dead{
