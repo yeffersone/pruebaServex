@@ -12,14 +12,12 @@ $loadNext.addEventListener('click', async () => {
 async function initApp(initCharacterId) {
   const characterData = await api.getCharacter(initCharacterId)
   console.log(characterData)
-  new Character(characterData)
-}
 
+  if(characterData.status === 'Alive'){
+    const characterData = await api.getCharacter(initCharacterId)
+    console.log(characterData.status)
+    new Character(characterData)
+    return Character
+  }
+  }
 initApp(currentCaracter)
-
-// console.log(initApp(currentCaracter)
-// )
-
-//console.log(api.getCharacter(1))
-
-

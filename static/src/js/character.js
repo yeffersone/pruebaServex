@@ -2,7 +2,6 @@ export default class Character {
     constructor({ name, image, /*gender,*/ species, status }) {
       this.name = name
       this.image = image
-      // this.gender = gender
       this.species = species
       this.status = status
       this.$characterImageContainer = document.querySelector('#character-image-container')
@@ -27,22 +26,10 @@ export default class Character {
       return `
         <div class="character-labels">
           <h3 class="character-label">Especie: ${this.species} </h3>
-          <h3 class="character-label">Status: ${this.status}</h3>
+          <h3 class="character-label">Estado: ${this.status}</h3>
         </div>
-      ` 
-        // <h3 class="character-label">Género: ${this.gender}</h3>  
-      
+      `
     }
-  
-    // render(){
-    //   if ( true){
-    //     this.$characterImageContainer.innerHTML = this.buildImage()
-    //     this.$characterNameContainer.innerHTML = this.buildName()
-    //     this.$characterDescriptionContainer.innerHTML = this.buildDescription()
-    //     this.$characterNamePlaceHolderContainer.innerHTML = this.name
-    //   }
-    // }
-
     render() {
       this.$characterImageContainer.innerHTML = this.buildImage()
       this.$characterNameContainer.innerHTML = this.buildName()
