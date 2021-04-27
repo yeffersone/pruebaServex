@@ -24,3 +24,6 @@ necesarias para cumplir los requerimientos.
 
 en la rama Backen muestro las imágenes en blanco y negro, pero son todas las
 imágenes no quedo el requerimiento completo.
+
+
+Yefferson Alberto Estrada Guisao
